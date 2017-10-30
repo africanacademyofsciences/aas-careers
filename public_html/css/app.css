@@ -1,9 +1,225 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #003a70;
+
+*{
+    border: 0;
+    margin: 0;
     padding: 0;
-    z-index: 10000;
+    outline: 0;
+}
+
+html,
+body {
+    font-family: 'Raleway', serif;
+    text-align: justify;
+}
+
+/*body{
+    padding-top: 160px;
+}*/
+
+a {
+    text-decoration: none; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    font-family: 'Raleway', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: inherit;
+}
+
+h1 {
+	font-family: Raleway;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.nav-center,
+.center{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1800px;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+    color: #191919;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/****************************NAV BAR************************************/
+
+.nav{
+    background: #003A70;
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.nav .left{
+    float: left;
+    margin-left: 0;
+}
+.nav .left li{
+    font-size: 14px;
+    float: left;
+    
+}    
+    .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav .left li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+    font-size: 18.5px;
+}
+.nav .left li a:hover{
+    color: #D08B0B;
+}
+
+.nav .right{
+    float: right;
+    margin-right: 0;
+}
+.nav .right li{
+    font-size: 14px;
+    float: left;
+}
+.nav .right li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+    font-size: 18.5px;
+}
+.nav .right li a:hover{
+    color: #D08B0B;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+
+/*********NAV BAR END**********/
+
+/****************************MEDIA QUERIES************************************/
+@media only screen and (max-width: 640px){
+    .nav{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav-center{
+        width: 100%;
+    }
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav .right{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+
+    .nav .left{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+    }
+}
+/*********MEDIA QUERY END**********/
+
+.left img{
+    height: 40px;
+    width: auto;
+}
+
+.home{
+   padding-top: 45px;
+}
+
+#jobopenings h2{
+    text-align: center;
+}
+
+#jobopenings{
+    
+    text-align: center;
 }
